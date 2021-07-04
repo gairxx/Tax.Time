@@ -15,11 +15,11 @@ var IncomeCalculator = function() {
   // TODO: Move to _data
   // tax bands -- with thanks to https://apps.wingubox.com/best-paye-tax-calculator-for-kenya
   this.TAX_TABLE = [
-    new TaxBand(0.10, 0, 0, 12298),
-    new TaxBand(0.15, 1229.8, 12299, 23885),
-    new TaxBand(0.20, 2967.5, 23886, 35472),
-    new TaxBand(0.25, 5285.25, 29318, 47059),
-    new TaxBand(0.30, 8182, 47060),
+    new TaxBand(0.10, 0, 0, 9875),
+    new TaxBand(0.12, 9876, 9875.5, 40125),
+    new TaxBand(0.22, 40126, 4617.5, 85525),
+    new TaxBand(0.24, 85526, 14605.5, 163300),
+    new TaxBand(0.32, 163301, 33271.5, 207350),
   ];
 
   this.PRIMARY_REBATE = {{ site.primary_rebate }};
